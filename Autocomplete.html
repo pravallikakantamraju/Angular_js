@@ -1,16 +1,3 @@
-﻿<!--<div class="btn-group full-width ui-dropdown-cntrl"
-     ng-controller="ControlCtrl"
-     ng-form="cell"
-     ng-class="{ 'has-error': cell.$invalid }">
-    <input type="text"
-           class="form-control autocompletewidth"
-           ng-attr-id="{{col.Id}}"
-           ng-model="itemData"
-           ng-focus="focusing()"
-           ng-class="{'ui-cbsacctNumber-disable': (customerType == 0 || customerType == null) }"
-           typeahead="suggestion.Description for suggestion in getAutoCompleteOptions($viewValue) | filter:$viewValue"
-           typeahead-on-select="didSelectAutocompleteSuggestion($item, $model, $label)" />
-</div>-->
 <div ng-app='task.controllers'>
     <div ng-controller="ControlCtrl">
         <typeaheadmultiselect data-ng-model="getMultiselectedData"
